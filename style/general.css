@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 0;
+}
+
+:root{
+    --purple_grad_start: #040006;
+    --middle_purple_grad_start: #140119;
+    --middle_purple_grad_end: #5B0E4E;
+    --purple_grad_end: #62005F;
+    --red_feet: #FD653D;
+    --red_grad_start: #FD653D;
+    --red_grad_end: #FF4167;
+    --text_white: white;
+}
+
+html {
+    background: linear-gradient(45deg, var(--purple_grad_start), var(--purple_grad_end));
+    font-family: Inter;
+  }
+
+.container{
+    margin: 3% auto 0;
+    max-width: 1100px;
+    min-height: 800px;
+    padding: 20px 20px 0;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1%;
+}

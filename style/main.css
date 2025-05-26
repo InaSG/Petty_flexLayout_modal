@@ -1,0 +1,125 @@
+main.container{
+    justify-content: space-evenly;
+    min-height: 700px;
+}
+
+.text_container{
+    width: 45%;
+    min-width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;;
+    color: var(--text_white);
+}
+
+.text_container h6{
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(45deg, var(--red_grad_start), var(--red_grad_end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text_container h1{
+    font-size: 52px;
+    font-weight: 300;
+    color: var(--text_white);
+}
+
+.text_container .red-title{
+    font-weight: 800;
+    background: linear-gradient(45deg, var(--red_grad_start), var(--red_grad_end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text_container p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.text_container button{
+    width: 160px;
+    padding: 1em;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text_white);
+    background: linear-gradient(45deg, var(--red_grad_start), var(--red_grad_end));
+}
+
+.text_container button:hover{
+    cursor: pointer;
+}
+
+.button_container{
+    justify-content: start;
+    gap: 4%;
+}
+
+.button_container a{
+    font-size: 14px;
+    width: 7em;
+    font-weight: 400;
+    color: var(--text_white);
+    border-bottom: 1px solid var(--text_white);
+    padding: 1px;
+}
+
+.img_container{
+    width: 53%;
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img_box{
+    width: 100%;
+    position: relative;
+    min-height: 800px;
+}
+
+.img_box .big_dog{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: -5%;
+}
+
+.img_box .dog1{
+    position: absolute;
+    bottom: 600px;
+    right: 60%;
+}
+
+.img_box .dog2{
+    position: absolute;
+    bottom: 430px;
+    right: 80%;
+}
+
+.img_box .dog3{
+    position: absolute;
+    bottom: 540px;
+    right: 15%;
+}
+
+.img_box .dog4{
+    position: absolute;
+    bottom: 470px;
+    right: -2%;
+}
+
+.img_box .dog5{
+    position: absolute;
+    bottom: 100px;
+    right: 90%;
+}
+
+
