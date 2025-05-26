@@ -122,4 +122,26 @@ main.container{
     right: 90%;
 }
 
+@media only screen and (max-width:1110px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .text_container{
+        width: 90%;
+    }
+    
+    .img_container{
+        width: 80%;
+    }
 
+    .img_box .big_dog{
+    width: 80%;
+}
+    .img_box{
+        justify-items: center;
+        align-items: center;
+    }
+}
