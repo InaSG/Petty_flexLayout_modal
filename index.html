@@ -18,47 +18,49 @@
 <body>
     <div class="container">
         <header>
-            <a href="#"><img src="images\logo.svg" alt="Petty logo"></a>
             <nav class="line">
-                <div class="main_nav">
+                <div class="logo">
+                    <a href="#"><img src="images\logo.svg" alt="Petty logo"></a>
+                </div>
+                <div class="main_nav line" id="nav">
                     <ul class="line">
-                        <li class="active">
+                        <li class="active nav_link">
                             <a href="#">
                                 Home
                             </a>
                         </li>
-                        <li>
+                        <li class="nav_link">
                             <a href="#">
                                 About
                             </a>
                         </li>
-                        <li>
+                        <li class="nav_link">
                             <a href="#">
                                 Services
                             </a>
                         </li>
-                        <li>
+                        <li class="nav_link">
                             <a href="#">
                                 Training
                             </a>
                         </li>
-                        <li>
+                        <li class="nav_link">
                             <a href="#">
                                 Shop
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="small_nav">
-                    <img src="images\menu_icon.svg" alt="menu icon">
-                </div>
                 <a class="contact_us line" href="#">
                     <p>Contact us</p>
                     <img src="images\arrow-right-circle-fill.svg" alt="">
                 </a>
+                <div class="small_nav" id="hamburger">
+                    <img class="menu" id="nav_img" src="images\menu_icon.svg" alt="menu icon">
+                </div>
             </nav>
         </header>
-        <main class="container line">
+        <main class="line">
             <div class="text_container">
                 <h6>Welcome...</h6>
                 <h1>Warmth and comfort for <span class="red-title">your furry friends</span></h1>
@@ -66,7 +68,9 @@
                     round.</p>
                 <div class="line button_container">
                     <button>Our services</button>
-                    <a href="#">Scedule a call</a>
+                    <div class="link">
+                        <a href="#">Scedule a call</a>
+                    </div>
                 </div>
             </div>
             <div class="img_container">
@@ -81,6 +85,7 @@
             </div>
         </main>
     </div>
+    <script src="./script/hamburger.js"></script>
 </body>
 
 </html>

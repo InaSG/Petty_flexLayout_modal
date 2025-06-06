@@ -1,12 +1,11 @@
-main.container{
+main{
     justify-content: space-evenly;
-    min-height: 700px;
 }
 
 .text_container{
-    width: 45%;
-    min-width: 300px;
-    min-height: 400px;
+    width: max(40%, 350px);
+    height: min(700px, 120vw);
+    padding-top: min(50px, 5vw);
     display: flex;
     flex-direction: column;
     gap: 3em;;
@@ -14,7 +13,7 @@ main.container{
 }
 
 .text_container h6{
-    font-size: 18px;
+    font-size: min(2.3vw, 18px);
     font-weight: 600;
     background: linear-gradient(45deg, var(--red_grad_start), var(--red_grad_end));
     -webkit-background-clip: text;
@@ -22,7 +21,7 @@ main.container{
 }
 
 .text_container h1{
-    font-size: 52px;
+    font-size: min(7vw, 52px);
     font-weight: 300;
     color: var(--text_white);
 }
@@ -35,16 +34,16 @@ main.container{
 }
 
 .text_container p{
-    font-size: 16px;
+    font-size: min(2vw, 16px);
     font-weight: 300;
     line-height: 2em;
 }
 
 .text_container button{
-    width: 160px;
+    width: min(20vw, 160px);
     padding: 1em;
     border-radius: 40px;
-    font-size: 14px;
+    font-size: min(1.8vw, 14px);
     font-weight: 500;
     color: var(--text_white);
     background: linear-gradient(45deg, var(--red_grad_start), var(--red_grad_end));
@@ -59,89 +58,69 @@ main.container{
     gap: 4%;
 }
 
-.button_container a{
-    font-size: 14px;
-    width: 7em;
+.button_container .link{
+    width: 45%;
+    height: min(20px, 5vw);
+}
+
+.button_container .link a{
+    font-size: min(1.8vw, 14px);
+    width: min(8vw, 160px);
     font-weight: 400;
     color: var(--text_white);
     border-bottom: 1px solid var(--text_white);
-    padding: 1px;
 }
 
 .img_container{
-    width: 53%;
-    background-image: url("images/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 70% 0;
+    width: max(49%, 450px);
+    padding-top: 50px;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    flex-wrap: wrap;
+    align-self: end;
 }
 
 .img_box{
     width: 100%;
     position: relative;
-    min-height: 800px;
+    height: inherit;
 }
 
-.img_box .big_dog{
-    position: absolute;
+.img_container .big_dog{
     width: 100%;
-    bottom: 0;
-    right: -5%;
 }
 
-.img_box .dog1{
+.img_container .dog1{
     position: absolute;
-    bottom: 600px;
-    right: 60%;
+    bottom: 110%;
+    left: 22%;
+    width: min(20%, 86px);
 }
 
-.img_box .dog2{
+.img_container .dog2{
     position: absolute;
-    bottom: 430px;
-    right: 80%;
+    bottom: 80%;
+    left: 10%;
+    width: min(17%, 69px);
 }
 
-.img_box .dog3{
+.img_container .dog3{
     position: absolute;
-    bottom: 540px;
-    right: 15%;
+    bottom: 100%;
+    left: 60%;
+    width: min(19%, 80px);
 }
 
-.img_box .dog4{
+.img_container .dog4{
     position: absolute;
-    bottom: 470px;
-    right: -2%;
+    bottom: 90%;
+    left: 88%;
+    width: min(15%, 52px);
 }
 
-.img_box .dog5{
+.img_container .dog5{
     position: absolute;
-    bottom: 100px;
-    right: 90%;
-}
-
-@media only screen and (max-width:1110px) {
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .text_container{
-        width: 90%;
-    }
-    
-    .img_container{
-        width: 80%;
-    }
-
-    .img_box .big_dog{
-    width: 80%;
-}
-    .img_box{
-        justify-items: center;
-        align-items: center;
-    }
+    bottom: 20%;
+    left: 1%;
+    width: min(16%, 58px);
 }

@@ -25,7 +25,6 @@ html {
 .container{
     margin: 3% auto 0;
     max-width: 1100px;
-    min-height: 800px;
     padding: 20px 20px 0;
 }
 
@@ -33,7 +32,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1%;
 }
