@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/modal.css">
 </head>
 
 <body>
@@ -51,10 +52,67 @@
                         </li>
                     </ul>
                 </div>
-                <a class="contact_us line" href="#">
+                <a class="contact_us line" id="contact_us" href="#">
                     <p>Contact us</p>
                     <img src="images\arrow-right-circle-fill.svg" alt="">
                 </a>
+                <div class="modal" id="modal">
+                    <div class="modal_content">
+                        <div class="modal_header">
+                            <span class="close" id="close_modal">&times;</span>
+                        </div>
+                        <div>
+                            <p>
+                                If you're having any questions or suggestions, why not get in touch? Call us on 01234
+                                567 890
+                                or fill out the form below.
+                            </p>
+                            <p>Our friendly, pet-loving Customer Service will do their very best to help you out with
+                                any questions or queries you may have.</p>
+                        </div>
+                        <fieldset>
+                            <legend> <img src="images\menu_hover.svg" alt="Petty logo" class="rotatedX"> <img
+                                    src="images\menu_hover.svg" alt="Petty logo"> <img src="images\menu_hover.svg"
+                                    alt="Petty logo" class="rotatedX"> <img src="images\menu_hover.svg"
+                                    alt="Petty logo"> <img src="images\menu_hover.svg" alt="Petty logo"
+                                    class="rotatedX"> </legend>
+                            <div class="form">
+                                <div class="line">
+                                    <div class="column">
+                                        <label class="first_name_zone" for="first_name">First Name</label>
+                                        <input class="first_name_zone" type="text" id="first_name">
+                                        <div class="first_name_zone message"></div>
+                                        <p class="first_name_zone tikrinimas" id="vardo_tikrinimas"></p>
+                                    </div>
+                                    <div class="column">
+                                        <label class="last_name" for="last_name">Last Name</label>
+                                        <input class="last_name_zone" type="text" id="last_name">
+                                        <div class="last_name_zone message"></div>
+                                        <p class="last_name_zone" id="pavardes_tikrinimas"></p>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <label class="email_zone" for="email">Email Address</label>
+                                    <input class="email_zone" type="email" minlength="8" id="email">
+                                    <div class="email_zone message"></div>
+                                    <p class="email_zone" id="numerio_tikrinimas"></p>
+                                    <label class="subject_zone" for="subject">Subject</label>
+                                    <input class="subject_zone" type="text" id="subject">
+                                    <div class="subject_zone message"></div>
+                                    <p class="subject_zone" id=""></p>
+                                    <label class="message_zone" for="message">Message</label>
+                                    <textarea class="message_zone" type="text" id="message"></textarea>
+                                    <div class="message_zone message"></div>
+                                    <p class="message_zone" id="numerio_tikrinimas"></p>
+                                </div>
+                                <div class="btn_zone column">
+                                    <button class="btn_zone" type="submit" id="mygtukas_registruotis">Submit</button>
+                                    <p class="confirmation_zone" id="confirmation"></p>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
                 <div class="small_nav" id="hamburger">
                     <img class="menu" id="nav_img" src="images\menu_icon.svg" alt="menu icon">
                 </div>
@@ -86,6 +144,7 @@
         </main>
     </div>
     <script src="./script/hamburger.js"></script>
+    <script src="./script/modal.js"></script>
 </body>
 
 </html>

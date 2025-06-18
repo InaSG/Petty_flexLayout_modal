@@ -1,0 +1,108 @@
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal_content {
+    background-color: #ffffff;
+    padding: min(10px, 1vw) min(30px, 5vw);
+    width: 80vw;
+    height: 80vh;
+    overflow-y: auto;
+    margin: 10vh auto;
+}
+
+.modal_content .line{
+    justify-content: space-between;
+}
+
+.modal_content .column{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1%;
+}
+
+.modal_content fieldset {
+    margin-top: min(10%, 30px);
+    border-color: var(--middle_purple_grad_end)
+}
+
+.modal_header {
+    padding: 1% 3%;
+    background: linear-gradient(45deg, var(--red_grad_start), var(--red_grad_end));
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.close {
+    color: var(--text_white);
+    font-size: min(3.5vw, 26px);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--middle_purple_grad_start);
+}
+
+.modal_content p {
+    color: var(--middle_purple_grad_end);
+    font-size: min(2vw, 16px);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: justify;
+    padding-top: min(20px, 1vw);
+    text-indent: min(50px, 7vw);
+}
+
+.modal_content fieldset input{
+    border: 2px solid var(--middle_purple_grad_end);
+    padding: 0.5vw;
+    font-size: min(2vw, 16px);
+    width: min(100%, 1200px);
+}
+
+.modal_content .form {
+    width: 100%;
+    padding: 3vw;
+}
+
+.modal_content fieldset legend{
+    margin: 0 1vw;
+}
+
+.modal_content fieldset label {
+    width: min(100%, 1200px);
+    color: var(--middle_purple_grad_end);
+    line-height: 1.5;
+    font-size: min(2vw, 16px);
+}
+
+.modal_content button {
+    margin-top: min(3vw, 15px);
+    border-color: var(--red_grad_start);
+}
+
+legend .rotatedX {
+    transform: rotateX(180deg) translateY(10px);
+}
+
+.modal_content textarea {
+    height: 100px;
+    color: var(--middle_purple_grad_start);
+    width: min(100%, 1200px);
+    border: 2px solid var(--middle_purple_grad_end);
+}
+
+.modal_content .message{
+    line-height: 1.5;
+    font-size: min(2vw, 16px);
+}

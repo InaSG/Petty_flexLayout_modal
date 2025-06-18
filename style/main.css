@@ -39,7 +39,7 @@ main{
     line-height: 2em;
 }
 
-.text_container button{
+button{
     width: min(20vw, 160px);
     padding: 1em;
     border-radius: 40px;
@@ -48,8 +48,8 @@ main{
     color: var(--text_white);
     background: linear-gradient(45deg, var(--red_grad_start), var(--red_grad_end));
 }
-
-.text_container button:hover{
+button:hover{
+    color: var(--middle_purple_grad_start);
     cursor: pointer;
 }
 
