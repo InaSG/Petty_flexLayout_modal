@@ -77,37 +77,34 @@
                                     alt="Petty logo"> <img src="images\menu_hover.svg" alt="Petty logo"
                                     class="rotatedX"> </legend>
                             <div class="form">
+                                <p class="validation_message" id="first_name_validation"></p>
+                                <p class="validation_message" id="last_name_validation"></p>
                                 <div class="line">
-                                    <div class="column">
-                                        <label class="first_name_zone" for="first_name">First Name</label>
-                                        <input class="first_name_zone" type="text" id="first_name">
-                                        <div class="first_name_zone message"></div>
-                                        <p class="first_name_zone tikrinimas" id="vardo_tikrinimas"></p>
+                                    <div class="column last_name_zone">
+                                        <label for="first_name">First Name *</label>
+                                        <input type="text" id="first_name">
                                     </div>
-                                    <div class="column">
+                                    <div class="column last_name_zone">
                                         <label class="last_name" for="last_name">Last Name</label>
-                                        <input class="last_name_zone" type="text" id="last_name">
-                                        <div class="last_name_zone message"></div>
-                                        <p class="last_name_zone" id="pavardes_tikrinimas"></p>
+                                        <input type="text" id="last_name">
                                     </div>
                                 </div>
                                 <div class="column">
-                                    <label class="email_zone" for="email">Email Address</label>
+                                    <p class="email_zone validation_message" id="email_validation"></p>
+                                    <label class="email_zone" for="email">Email Address *</label>
                                     <input class="email_zone" type="email" minlength="8" id="email">
-                                    <div class="email_zone message"></div>
-                                    <p class="email_zone" id="numerio_tikrinimas"></p>
+                                    <p class="subject_zone validation_message" id="subject_validation"></p>
                                     <label class="subject_zone" for="subject">Subject</label>
                                     <input class="subject_zone" type="text" id="subject">
-                                    <div class="subject_zone message"></div>
-                                    <p class="subject_zone" id=""></p>
-                                    <label class="message_zone" for="message">Message</label>
+                                    <p class="message_zone validation_message" id="message_validation"></p>
+                                    <label class="message_zone" for="message">Message *</label>
                                     <textarea class="message_zone" type="text" id="message"></textarea>
-                                    <div class="message_zone message"></div>
-                                    <p class="message_zone" id="numerio_tikrinimas"></p>
                                 </div>
                                 <div class="btn_zone column">
-                                    <button class="btn_zone" type="submit" id="mygtukas_registruotis">Submit</button>
                                     <p class="confirmation_zone" id="confirmation"></p>
+                                    <button class="btn_zone" id="thanks_btn">Thank You</button>
+                                    <button class="btn_zone" type="submit" id="submit_message_btn">Submit</button>
+                                    <p class="validation_message" id="missing_data"></p>
                                 </div>
                             </div>
                         </fieldset>
@@ -143,8 +140,7 @@
             </div>
         </main>
     </div>
-    <script src="./script/hamburger.js"></script>
-    <script src="./script/modal.js"></script>
+    <script src="./script/main.js" type="module"></script>
 </body>
 
 </html>

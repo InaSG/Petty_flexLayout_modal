@@ -12,8 +12,8 @@
 .modal_content {
     background-color: #ffffff;
     padding: min(10px, 1vw) min(30px, 5vw);
-    width: 80vw;
-    height: 80vh;
+    width: min(80vw, 900px);
+    height: min(80vh, 750px);
     overflow-y: auto;
     margin: 10vh auto;
 }
@@ -68,11 +68,20 @@
     padding: 0.5vw;
     font-size: min(2vw, 16px);
     width: min(100%, 1200px);
+    color: var(--middle_purple_grad_end);
+}
+
+.modal_content .last_name_zone{
+    width: min(45%, 550px);
+}
+
+.modal_content fieldset input:focus{
+    border: 4px solid var(--middle_purple_grad_start);
 }
 
 .modal_content .form {
     width: 100%;
-    padding: 3vw;
+    padding: 0 3vw;
 }
 
 .modal_content fieldset legend{
@@ -102,7 +111,29 @@ legend .rotatedX {
     border: 2px solid var(--middle_purple_grad_end);
 }
 
-.modal_content .message{
-    line-height: 1.5;
-    font-size: min(2vw, 16px);
+.modal_content fieldset .valid{
+    border: 3px solid var(--middle_purple_grad_end);
 }
+
+.modal_content fieldset .invalid{
+    border: 2px solid var(--red_grad_end);
+    color: var(--red_grad_end);
+}
+
+.modal_content .validation_message{
+    text-indent: 0;
+    text-transform: uppercase;
+    color: var(--red_grad_end);
+}
+
+.modal_content .confirmation_zone {
+    font-size: min(2.3vw, 20px);
+    text-indent: 0;
+}
+
+.modal_content .thanks {
+    font-size: min(2.3vw, 20px);
+    font-weight: 700;
+    text-indent: 0;
+}
+
